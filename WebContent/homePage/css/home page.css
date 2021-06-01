@@ -1,0 +1,25 @@
+body{
+margin:0;
+padding:0;
+background: repeat-x;
+font:12px/1.6Arial;
+height:100%p;
+width:100%;}
+ul{ margin:0px;
+padding:0px;
+list-style-type:none;}
+a{color:
+text-decoration:none;
+}
+p{text-indent:2em;}/* CSS Document */
+
+#footer{clear:both;
+ height:58px;
+ margin:0;
+ background:#666 repaet-x;
+ text-indent:0;
+ text-align:center;
+ } 
+ .header1{
+	 margin:30px;
+	 letter-spacing:10px;}
