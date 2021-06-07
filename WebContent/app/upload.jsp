@@ -2,9 +2,10 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
 <head>
 
-<script type="text/javascript" src="<%=request.getContextPath() %>/scripts/jquery-1.3.2.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 
 
@@ -45,23 +46,37 @@ $(function(){
 });
 
 </script>
+<base href="<%=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()+"/" %>"/>
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0"> 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Iconos -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <style type="text/css">
+    body,td,th {
+	font-family: "Open Sans", Arial, Helvetica, Sans-serif, Verdana, Tahoma;
+	color: #5A7EB4;
+}
+    </style>
 </head>
 <body>
-<font color="red">${message}</font>
+<div id="index" >
+<div class="b1"><strong>后台管理系统</strong></div>
+
+
+
+ 
+</div>  
 <br><br>
-<form action="fileuploadservlet" method="post" enctype="multipart/form-data">
-<!-- <input type="hidden" id="fileNum" name="fileNum" id="1" />  -->
-<!--  
-File1: <input type="file" name="file1" />
-<br>
-Desc1: <input type="text" name="desc1" />
-<br>
-<br id="br">
-<input type="submit" id="submit" value="提交" />
-<button id="addFile">新增一个附件</button>
- -->
+<font color="red">${msg}</font>
+<br><br>
+<form action="app/fileuploadservlet" method="post" enctype="multipart/form-data">
+
  
  <table>
  <tr class="file">
@@ -82,4 +97,3 @@ Desc1: <input type="text" name="desc1" />
 
 </body>
 </html>
-

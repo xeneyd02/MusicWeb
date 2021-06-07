@@ -4,11 +4,7 @@
 admin.domain.Admin,admin.domain.Songs,admin.domain.Singers,admin.domain.Users" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
- <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
-
-<script src="js/index.js"></script>
-<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
-<script src="/follow.js" type="text/javascript"></script>
+ 
 <head>
 <base href="<%=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()+"/" %>"/>
 <meta http-equiv="pragma" content="no-cache">
@@ -16,6 +12,10 @@ admin.domain.Admin,admin.domain.Songs,admin.domain.Singers,admin.domain.Users" %
 <meta http-equiv="expires" content="0"> 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title></title>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<script src="js/index.js"></script>
+
  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Iconos -->
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -57,7 +57,7 @@ for(Admin admin:adminsroot){
 
 
 <!-- Contenedor -->
-	<ul id="accordion" class="accordion">
+	<ul id="accordion" class="accordion" >
 		<li>
 			<div class="link"><i class="fa fa-paint-brush"></i>管理员管理<i class="fa fa-chevron-down"></i></div>
 			<ul class="submenu">
@@ -86,6 +86,13 @@ for(Admin admin:adminsroot){
 			<ul class="submenu">
 				<li><a href="query.bo">查询管理</a></li>
 				<li><a href="newcustomer3.jsp">添加管理</a></li>
+			</ul>
+		</li>
+		<li>
+			<div class="link"><i class="fa fa-mobile"></i>上传歌曲<i class="fa fa-chevron-down"></i></div>
+			<ul class="submenu">
+				<li><a href="app/upload.jsp">歌曲上传</a></li>
+				
 			</ul>
 		</li>
 	</ul>

@@ -16,9 +16,15 @@ public class Singers {
 	public void setSingername(String singername) {
 		this.singername = singername;
 	}
+	public Singers(Integer singerid,String singername) {
+		super();
+		this.singername = singername;
+		this.singerid=singerid;
+	}
 	public Singers(String singername) {
 		super();
 		this.singername = singername;
+		
 	}
 	@Override
 	public String toString() {

@@ -134,36 +134,65 @@ List<Search2> users=(List<Search2>)request.getAttribute("customers2");
 %>
      <table width="738"  >
 	<tr align="center" >
-	<th width="180"><h2>歌手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
+	<th width="350"><h2> 歌手 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
 	
-	<th width="350"><h2>歌曲名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
-    
-	<th width="180"><h2>类型&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
+	<th width="350"><h2> 歌曲名 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
+      <%
+if(users!=null&&users.size()>0){
+	%>
+	
+	<th width="350"><h2> DOWNLOAD  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
+	<%
+	
+}else{
+	
+}
+%>  
+	
+	<th width="350"><h2> PLAY  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
     
 	</tr>
-	</table> 
+	
 
     <%
     
 for(Search2 user:users){
 	%>
 	
-	<table width="812" >
+	
 	
 	<tr id="one" align="center" >
-	<td width="157"><%=user.getSongsinger() %></td>
+	<td width="350"><%=user.getSongsinger() %></td>
 	
-	<td width="367"><%=user.getSongname() %></td>
-	<td width="162"><%=user.getSongtype() %></td>
-	<td width="80"><a href="searchSinger/Servlet2Servlet?songid=<%=user.getSongid() %>">播放</a></td>
+	<td width="350"><%=user.getSongname() %></td>
+  <%
+   
+if(users!=null&&users.size()>0){
+	
+	
+	%>
+	
+	<form action="downloadServlet?songid=<%=user.getSongid() %>" method="post">
+
+    <td><input type="submit" id="download" value="Download"/></td>
+    
+    </form>
+	<%
+	
+	
+}else{
+	
+}
+%>  
+	<td width="350"><a href="searchSinger/Servlet2Servlet?songid=<%=user.getSongid() %>">播放</a></td>
 	</tr>
 
-	</table>
+	
 
 	<%
 }
 %>
-    
+    </table>
     
    
 </body>

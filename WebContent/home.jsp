@@ -43,7 +43,8 @@
 
 管理员用户 <input type="text" name="name" />
 <br><br>
-密码 <input type="password" name="password" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="password" name="password" />
 
 <br><br>
 

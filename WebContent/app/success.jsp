@@ -30,45 +30,19 @@
 <body>
 
 
+	
 <div id="index" >
 <div class="b1"><strong>后台管理系统</strong></div>
 
-
-
+<div class="b2" action="" ><strong><a href="">退出</a></strong></div>
+<div class="b3"></div>
  
 </div> 
-<br><br>
-<%
-Object msg=request.getAttribute("message");
-if(msg!=null){
-	%>
-	<br>
-	<font color="red" ><%=msg %></font>
-	<br>
-	<%
-}
-%>
+
 <br><br>
 <center>
-<form action="addCustomer.bo" method="post">
-<table>
-<tr>
-<td>歌手ID</td>
-<td><input type="text" name="singerid" value=<%=request.getParameter("singerid")==null ? "" : request.getParameter("singerid")  %>></td>
-
-</tr>
-
-<tr>
-<td>歌手</td>
-<td><input type="text" name="singername" value=<%=request.getParameter("singername")==null ? "" : request.getParameter("singername")  %>></td>
-
-</tr>
-
-<tr>
-<td colspan="2"><input type="submit" value="submit" /></td>
-</tr>
-</table>
-</form>
+<h4>上传成功</h4>
+<h4><a href="main.jsp">Return...</a></h4>
 </center>
 </body>
 </html>

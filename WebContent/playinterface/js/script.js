@@ -7,7 +7,7 @@
 	var songurl=$("#songurl").val();
 	var path=$("#path").val();
 	var mp3url=path+"/"+songurl+songsinger+'-'+songname+'.'+songtype;
-	
+	alert(mp3url);
 	var repeat = localStorage.repeat || 0,
 		shuffle = localStorage.shuffle || 'false',
 		continous = true,

@@ -66,15 +66,16 @@ public class SingersServlet extends HttpServlet {
 		
 	}
 	private void addCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String singerid=request.getParameter("singerid");
 		String singername=request.getParameter("singername");
 		
 		long count = singersDAO.getCountWithName(singername);
 		if(count>0){
-			request.setAttribute("message","管理员用户名"+singername+"已经注册啦");
+			request.setAttribute("message","歌手"+singername+"已经存在啦");
 			request.getRequestDispatcher("/newcustomer3.jsp").forward(request, response);
 			return;
 		}
-		Singers singers=new Singers(singername);
+		Singers singers=new Singers(Integer.parseInt(singerid),singername);
 		singersDAO.save(singers);
 		response.sendRedirect("success3.jsp");
 	}

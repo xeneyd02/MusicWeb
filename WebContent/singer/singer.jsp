@@ -192,33 +192,33 @@ if(users!=null&&users.size()>0){
 <div class="sotr_tag">
  <form action="searchServlet" method="post">
    <button class="hot_cur"><a href="#">热门</a></button>
-   <div class="tag_box"><a href="#" >A</a></div>
-   <div class="tag_box"><a href="#">B</a></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="A" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="B" ></div>
    <div class="tag_box"><input name="searchen" type="submit" value="C" ></div>
-   <div class="tag_box"><a href="#">D</a></div>
-   <div class="tag_box"><a href="#">E</a></div>
-   <div class="tag_box"><a href="#">F</a></div>
-   <div class="tag_box"><a href="#">G</a></div>
-   <div class="tag_box"><a href="#">H</a></div>
-   <div class="tag_box"><a href="#">I</a></div>
-   <div class="tag_box"><a href="#">J</a></div>
-   <div class="tag_box"><a href="#">K</a></div>
-   <div class="tag_box"><a href="#">L</a></div>
-   <div class="tag_box"><a href="#">M</a></div>
-   <div class="tag_box"><a href="#">N</a></div>
-   <div class="tag_box"><a href="#">O</a></div>
-   <div class="tag_box"><a href="#">P</a></div>
-   <div class="tag_box"><a href="#">Q</a></div>
-   <div class="tag_box"><a href="#">R</a></div>
-   <div class="tag_box"><a href="#">S</a></div>
-   <div class="tag_box"><a href="#">T</a></div>
-   <div class="tag_box"><a href="#">U</a></div>
-   <div class="tag_box"><a href="#">V</a></div>
-   <div class="tag_box"><a href="#">W</a></div>
-   <div class="tag_box"><a href="#">X</a></div>
-   <div class="tag_box"><a href="#">Y</a></div>
-   <div class="tag_box"><a href="#">Z</a></div>
-   <div class="tag_box"><a href="#">#</a></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="D" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="E" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="F" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="G" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="H" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="I" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="J" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="K" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="L" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="M" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="N" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="O" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="P" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="Q" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="R" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="S" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="T" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="U" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="V" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="W" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="X" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="Y" ></div>
+   <div class="tag_box"><input name="searchen" type="submit" value="Z" ></div>
+  
  
     </form>
  </div>
@@ -232,7 +232,7 @@ if(users!=null&&users.size()>0){
 					<li>
 						<div class="ch-item ch-img-1">
 							<div class="ch-info">
-								<h3><a href="#">演员</a><br/>
+								<h3><a href="<%=request.getContextPath() %>/searchSinger/Servlet2Servlet?songid=3">演员</a><br/>
                                 <a href="#">丑八怪</a><br/>
                                <a href="#" >绅士</a></h3>
                              
@@ -245,7 +245,7 @@ if(users!=null&&users.size()>0){
 							<div class="ch-info">
 								<h3><a href="#">一万个舍不得</a><br/>
                                 <a href="#">以后的以后</a><br/>
-                               <a href="#" >爱囚</a></h3>
+                               <a href="<%=request.getContextPath() %>/searchSinger/Servlet2Servlet?songid=11" >爱囚</a></h3>
 								<p><h2><a href="#">庄心研 </h1></a></p>
 							</div>
 						</div>
