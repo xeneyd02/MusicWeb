@@ -63,7 +63,7 @@ if(users!=null&&users.size()>0){
 <div class="ww">
 <div id="y1"><a>歌曲</a></div>
 <div id="y2"><a>歌手</a></div>
-<div id="y3"><a>PLAY</a></div>
+<div id="y3"><a>播放</a></div>
 </div>
 <hr />
 <% List<Search2> customers2=(List<Search2> ) request.getAttribute("customers2");
@@ -105,7 +105,7 @@ if(users!=null&&users.size()>0){
 }else{
 }
 %>  
-     <td class="b1"><a href="searchSinger/Servlet2Servlet?songid=<%=songid %>">播放</a></td>
+     <td class="b1"><a href="searchSinger/Servlet2Servlet?songid=<%=songid %>">PLAY</a></td>
      
   </tr>
   

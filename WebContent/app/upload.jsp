@@ -38,7 +38,7 @@ $(function(){
 				$(this).find("td:first").text("Desc"+n);
 				$(this).find("td:last input").attr("name","desc"+n);
 			});
-			i=i-1;
+			
 			
 		});
 		return false;

@@ -61,8 +61,8 @@ a{color:#000;
 }
 #y1{
 	
-	width: 250px;
-	height: 50px;
+	width: 333px;
+	height: 49px;
 	line-height:50px;
 	margin-left:;
 	margin-top: 0px;
@@ -80,8 +80,8 @@ background-color:#457E89
 }
 #y2{
 	
-	width: 250px;
-	height: 50px;
+	width: 430px;
+	height: 49px;
 	line-height:50px;
 	margin-left: 250px;
 	margin-top: 0px;
@@ -97,8 +97,8 @@ background-color:#457E89
 background-color:#457E89 
 }
 #y3{
-	width:250px;
-	height: 50px;
+	width:500px;
+	height: 49px;
 	line-height:50px;
 	margin-left: 500px;
 	margin-top: 0px;
@@ -125,7 +125,7 @@ background-color:#457E89
 	
 table{
 	width:1000px;
-	height: 200px;
+	height: 50px;
 	font-size: 14px;
 	table-layout: fixed;
 	empty-cells: show;

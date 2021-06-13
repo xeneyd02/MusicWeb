@@ -137,18 +137,16 @@ List<Search2> users=(List<Search2>)request.getAttribute("customers2");
 	<th width="350"><h2> 歌手 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
 	
 	<th width="350"><h2> 歌曲名 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
-      <%
-if(users!=null&&users.size()>0){
-	%>
-	
-	<th width="350"><h2> DOWNLOAD  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
+ 
 	<%
-	
-}else{
-	
-}
-%>  
-	
+	if(users2!=null && users2.size()>0){
+		%>
+		<th width="350"><h2>DOWNLOAD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
+		<%
+	}else{
+		
+	}
+	%>
 	<th width="350"><h2> PLAY  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
     
 	</tr>
@@ -167,7 +165,7 @@ for(Search2 user:users){
 	<td width="350"><%=user.getSongname() %></td>
   <%
    
-if(users!=null&&users.size()>0){
+if(users2!=null&&users2.size()>0){
 	
 	
 	%>
@@ -184,6 +182,8 @@ if(users!=null&&users.size()>0){
 	
 }
 %>  
+
+
 	<td width="350"><a href="searchSinger/Servlet2Servlet?songid=<%=user.getSongid() %>">播放</a></td>
 	</tr>
 

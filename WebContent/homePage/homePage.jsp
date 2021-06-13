@@ -186,7 +186,7 @@ if(users!=null&&users.size()>0){
   <p><a href="../homePage.jsp" style="text-align:justify; text-decoration:blink; position:absolute;top:130px;left:480px;font-size:24px">首页</a></p>
   <p><a href="../singer/singer.jsp"style="text-align:justify; text-decoration:blink; position:absolute;top:130px;left:570px;font-size:24px">歌手</a></p>
   <p><a href="../phb/phb.jsp"style="text-align:justify; text-decoration:blink; position:absolute;top:130px;left:660px;font-size:24px">排行榜</a></p>
-  <p><a href="#" style="text-align:justify; text-decoration:blink; position:absolute;top:130px;left:780px;font-size:24px">MV</a></p>
+   <p><a href="../home.jsp" style="text-align:justify; text-decoration:blink; position:absolute;top:130px;left:780px;font-size:24px">后台管理</a></p>
 </div>
 
 </div>
